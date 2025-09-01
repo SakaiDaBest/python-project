@@ -5,7 +5,7 @@ import time
 
 app = Flask(__name__)
 
-app.secret_key = "pihfwaeiufopa278349hjiafawei"
+app.secret_key = "your_secret"
 app.config['SESSION_COOKIE_NAME'] = 'Wong Coookie'
 TOKEN_INFO = "token_info"
 
@@ -77,11 +77,12 @@ def get_token():
 
 def create_spotify_oauth():
     return SpotifyOAuth(
-        client_id="cb9b955dfc654282a9ec03777cb2dcab",
-        client_secret="576c1af2e28149e1acb67c73a310c76a",
+        client_id="your_id",
+        client_secret="your_secret",
         redirect_uri=url_for('redirect_page', _external=True),  
         scope="user-library-read"
     )
 
 if __name__ == '__main__':
     app.run(debug=True)  
+
