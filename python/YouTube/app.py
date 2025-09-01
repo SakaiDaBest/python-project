@@ -12,7 +12,7 @@ import pandas as pd
 #Code by Wong Wei Jun : D
 
 app = Flask(__name__)
-app.secret_key = "pihfwaeiufopa278349hjiafawei"
+app.secret_key = "your_secret"
 app.config['SESSION_COOKIE_NAME'] = 'Wong_Cookie'
 TOKEN_INFO = "token_info"
 
@@ -170,3 +170,4 @@ def download_liked_videos(csv_path):
 
 if __name__ == "__main__":
     app.run(debug=True, host="127.0.0.1", port=5000)
+
