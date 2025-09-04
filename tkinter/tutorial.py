@@ -69,8 +69,10 @@ listbox.bind("<<ListboxSelect>>", listbox_used)
 listbox.pack()
 window.mainloop()
 
-
-
+#Layout managers
+#.pack squishes things together in a somewhat logical way (not recommended)
+#.place(x,y)
+#.grid(column, row)
 
 
 
